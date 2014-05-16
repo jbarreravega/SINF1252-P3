@@ -1,9 +1,8 @@
 set title 'Benchmark of readdir'
-set xlabel 'Number of files'
+set xlabel 'number of files '
 set ylabel 'time [ns]'
-set key left top
+set key right bottom
 set autoscale x
 set autoscale y
-plot 'readdir1.csv' using 1:2 title 'readdir 0B',\
-	'readdir2.csv' using 1:2 title 'readdir 1KB',\
-	'readdir3.csv' using 1:2 title 'readdir variable size'
+
+plot 'readdir.csv' using 1:2 title 'average speed of readdir calling'

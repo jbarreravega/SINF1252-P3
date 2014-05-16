@@ -1,8 +1,27 @@
-set title 'Benchmark of writev'
-set xlabel 'size [B] of the file'
+set multiplot
+set title 'Benchmark of writev and write multi buffer'
+set size 0.5,0.5
+set origin 0.0,0.0
+set xlabel 'writing bytes'
 set ylabel 'time [ns]'
-set key left top
-set logscale x
+set key right bottom
+set autoscale x
 set logscale y
-plot 'writev.csv' using 1:2 title 'writev',\
-  'write.csv' using 1:2 title 'write'
+
+
+plot 'write2.csv' using 1:2 title 'write',\
+'writev2.csv' using 1:2 title 'writev'
+
+set title 'Benchmark of writev and write one buffer'
+set size 0.5,0.5
+set origin 0.5,0.5
+set xlabel 'writing bytes'
+set ylabel 'time [ns]'
+set key right bottom
+set autoscale x
+set logscale y
+
+plot 'write.csv' using 1:2 title 'write',\
+'writev.csv' using 1:2 title 'writev'
+
+unset multiplot

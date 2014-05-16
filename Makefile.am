@@ -20,5 +20,8 @@ SUBDIRS =   \
 			pipe \
 			shm \
 			thread \
-			types
-			
+			types  \
+                        readdir \
+			writev
+
+
