@@ -1,0 +1,7 @@
+set title 'Benchmark of stack/heap'
+set xlabel 'size allocated [B]'
+set ylabel 'time [ns]'
+set key right bottom
+set logscale x
+plot 'stack.csv' using 1:2 title 'stack',\
+  'heap.csv' using 1:2 title 'heap'

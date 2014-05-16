@@ -1,0 +1,8 @@
+set title 'Benchmark of the parallelization benefit'
+set xlabel 'Threads/processes used'
+set ylabel 'time [ns]'
+set key right top
+#set logscale x 2
+plot 'thread.csv' using 1:2 title 'thread',\
+     'proc.csv' using 1:2 title 'process'
+

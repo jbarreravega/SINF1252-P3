@@ -1,0 +1,32 @@
+*.png
+*.o
+*.a
+*.csv
+*~
+tmp.dat
+doc
+# généré par lib/gen_html.sh
+index.html
+# générés par perf
+*.txt
+
+# générés par autoconf
+m4
+missing
+ltmain.sh
+libtool
+configure
+config.status
+config.sub
+config.log
+config.guess
+compile
+aclocal.m4
+autom4te.cache
+depcomp
+.deps
+Makefile
+Makefile.in
+install-sh
+
+.DS_Store

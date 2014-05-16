@@ -1,0 +1,7 @@
+set title 'Benchmark between read/write and mmap/munmap'
+set xlabel 'size [B] of the block that are read/written at once'
+set ylabel 'time [ns]'
+set key right top
+set logscale x
+plot 'rw.csv' using 1:2 title 'rw',\
+  'mmap.csv' using 1:2 title 'mmap'
