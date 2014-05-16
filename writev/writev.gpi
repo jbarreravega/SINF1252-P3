@@ -1,0 +1,8 @@
+set title 'Benchmark of writev'
+set xlabel 'size [B] of the file'
+set ylabel 'time [ns]'
+set key left top
+set logscale x
+set logscale y
+plot 'writev.csv' using 1:2 title 'writev',\
+  'write.csv' using 1:2 title 'write'
